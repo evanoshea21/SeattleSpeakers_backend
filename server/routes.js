@@ -2,6 +2,8 @@ const router = require('express').Router();
 const Users = require('./controllers/Users.js');
 const Badges = require('./controllers/Badges.js');
 
+router.get('/test', Users.test);
+
 //User routes
 router.get('/users', Users.getAllUsers);
 router.get('/users/orderBy/:order', Users.getUsersOrdered);

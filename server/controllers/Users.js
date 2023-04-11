@@ -2,6 +2,10 @@ const db = require('../db');
 
 module.exports = {
 
+  test: (req,res) => {
+    res.status(200).send('server running baby');
+  },
+
   createUser: (req, res) => {
     const {body} = req;
     let qString;
